@@ -1,4 +1,6 @@
-*, *::after, *::before {
+*,
+*::after,
+*::before {
   box-sizing: border-box;
 }
 
@@ -83,4 +85,70 @@ ul {
   font-size: 17px;
   text-align: center;
   color: #FFFFFF;
+}
+
+.main {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding-top: 54px;
+}
+
+.main-info {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: space-around;
+  flex-grow: 1;
+  text-align: center;
+}
+
+.home-image path {
+  opacity: 0;
+}
+
+.home-image path:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.counter-group {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+.counter {
+  display: inline-block;
+  font-size: 100px;
+  color: #635854;
+  margin: 35px 0;
+}
+
+.counter-button {
+  background-color: #fff;
+  border: none;
+}
+
+.counter-arrow-down {
+  transform: rotateX(180deg);
+}
+
+.main-title {
+  font-weight: normal;
+  font-size: 25px;
+  text-transform: uppercase;
+  color: #635854;
+}
+
+.button {
+  padding: 16px 36px;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  border-radius: 6px;
+}
+.button-primary {
+  background: #3596F5;
 }
